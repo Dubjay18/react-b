@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html,
+body,
+body > div .App {
+  background: #f2f2f2;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  width: 100%;
+
+  background: #f2f2f2;
+}
+.space {
+  background: #f2f2f2;
+}
+.space h1 {
+  font-weight: 900;
+}
+.space h2 {
+  font-weight: 800;
+}
+.plus {
+  top: 80%;
+  bottom: 0%;
+  left: 68%;
+}
+.space-content {
+  width: 90%;
+  height: 60%;
+  transition: all 0.7s;
+}
+.rounded-prime {
+  border-radius: 16px !important;
+  transition: all 0.7s;
+}
+.custom-shadow {
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+.card-img {
+  border-radius: 16px 16px 0px 0px !important;
+}
+.border-black {
+  border: 2px solid black !important;
+}
+.scroll {
+  overflow-y: scroll;
+  max-height: 70vh;
+}
+/* .h {
+  height: 100vh !important;
+} */
+
+.css-1s2u09g-control {
+  border: none !important;
+  background: rgba(245, 245, 245, 1) !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+}
+@media (max-width: 600px) {
+  .lex {
+    flex-direction: column !important;
+  }
+  .lex img {
+    width: 100px;
+  }
+}
+@media (max-width: 800px) {
+  .h p {
+    font-size: 14px;
+  }
+  .h h5 {
+    font-size: 14px !important;
+  }
+  .media-content {
+    width: 40% !important;
+  }
+  .media-content .h .card-title h5 {
+    font-size: 14px !important;
+  }
+  .space-content p {
+    font-size: 14px;
+  }
+
+  .h5 {
+    font-size: 14px !important;
+    width: 100% !important;
+  }
+}
+@media (max-width: 320px) {
+  .media-content {
+    display: none;
+  }
+  .sidebar-media {
+    width: 100% !important;
+    margin: 0px !important;
+  }
+}
+.formInput {
+  border: none !important;
+  background: rgba(245, 245, 245, 1) !important;
+  border-radius: 8px !important;
+  width: 100% !important;
+}
+.modal-header {
+  border-bottom: none !important ;
+}
+
+/* .rounded-prime:active {
+  border: 2px solid rgb(200, 2, 2) !important;
+} */
+.btn-neWtrans:focus,
+.btn-neWtrans:active:focus {
+  outline: 100px !important;
+}
+#wow:active,
+#wow:focus {
+  box-shadow: none;
+  border: 2px solid rgba(18, 28, 51, 1) !important;
+  border-radius: 16px;
+}
