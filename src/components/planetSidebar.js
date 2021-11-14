@@ -3,15 +3,13 @@ import { Button } from "react-bootstrap";
 // import srcone from "../Strapi assets/characters/character-1.png";
 import { planets } from "./../data";
 
-const SideBarTwo = ({ info }) => {
+const SideBarTwo = ({ info, d }) => {
   let pchar = [];
-  console.log(planets[0].char[0].name);
 
   for (let i = 0; i < planets.length; i++) {
     const el = planets[i];
     let nam = el.char.length;
 
-    console.log(el.char.length);
     pchar.push(nam);
   }
 
@@ -55,8 +53,7 @@ const SideBarTwo = ({ info }) => {
     <div className="p-lg-4 p-3 h">
       <h1>{info}</h1>
       <p className="text-muted">
-        {info} is the place to be if you like everything related to planets. I
-        know it’s a bit meta, but come see by yourself.
+        {info} {d}
       </p>
       <div className="d-flex w-50 justify-content-between lex">
         <div>

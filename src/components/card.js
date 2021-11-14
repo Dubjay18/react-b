@@ -286,7 +286,7 @@ const Cards = () => {
               <CloseButton onClick={() => setSide(false)} />
             </Button>
           </div>
-          <SideBarOne info={item.name} friend={item.friends} />{" "}
+          <SideBarOne info={item.name} friend={item.friends} d={details} />{" "}
         </div>
       ) : (
         ""

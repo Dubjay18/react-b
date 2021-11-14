@@ -23,7 +23,7 @@ const Planet = () => {
   const [sidet, setSidet] = React.useState(false);
   localStorage.setItem("plane", JSON.stringify(planets));
   const [pname, setPname] = React.useState("");
-  // const [details, setDetails] = React.useState("");
+  const [details, setDetails] = React.useState("");
   const [svg, setSvg] = React.useState("");
   let plain = JSON.parse(localStorage.getItem("plane"));
   const [data, setData] = useState(plain);
@@ -31,6 +31,7 @@ const Planet = () => {
     data.push({
       name: pname,
       svg_src: svg,
+      dep: details,
       // details: details,
     });
     console.log(data);
@@ -125,7 +126,12 @@ const Planet = () => {
               <Form.Label>
                 <h4>Description</h4>
               </Form.Label>
-              <Form.Control as="textarea" rows={3} className="formInput  p-3" />
+              <Form.Control
+                as="textarea"
+                rows={3}
+                className="formInput  p-3"
+                onChange={(e) => setDetails(e.target.value)}
+              />
             </Form.Group>
           </Form>
         </Modal.Body>
@@ -145,7 +151,12 @@ const Planet = () => {
             : "space-content mt-5 "
         }
       >
-        <Row xs={1} lg={3} className="g-5 rounded-prime">
+        <Row
+          xs={1}
+          md={sidet === true ? 2 : 3}
+          lg={sidet === true ? 3 : 4}
+          className="g-5 rounded-prime"
+        >
           {data.map((e, ind) => (
             <Col id={ind}>
               <Card
@@ -191,7 +202,7 @@ const Planet = () => {
               <CloseButton variant="gray" onClick={() => setSidet(false)} />
             </Button>
           </div>
-          <SideBarTwo info={itemt.name} />{" "}
+          <SideBarTwo info={itemt.name} d={itemt.dep} />{" "}
         </div>
       ) : (
         ""

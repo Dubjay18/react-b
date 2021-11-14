@@ -1,13 +1,12 @@
 import React from "react";
 
 // import { Friendss } from "./../data";
-const SideBarOne = ({ info, friend }) => {
+const SideBarOne = ({ info, friend, d }) => {
   return (
     <div className="p-lg-4 p-3 h">
       <h1>{info}</h1>
       <p className="text-muted">
-        {info} is really a nice person. He/she is been living on planet Alpha
-        for the last 10 years.
+        {info} {d}
       </p>
       <div className="d-flex w-50 justify-content-between lex">
         <div>
