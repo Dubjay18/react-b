@@ -107,6 +107,9 @@ body {
 .modal-header {
   border-bottom: none !important ;
 }
+.modal-footer {
+  border-top: none !important;
+}
 
 /* .rounded-prime:active {
   border: 2px solid rgb(200, 2, 2) !important;
