@@ -3,7 +3,7 @@ import React from "react";
 // import { Friendss } from "./../data";
 const SideBarOne = ({ info, friend }) => {
   return (
-    <div className="p-lg-4 p-2 h">
+    <div className="p-lg-4 p-3 h">
       <h1>{info}</h1>
       <p className="text-muted">
         {info} is really a nice person. He/she is been living on planet Alpha

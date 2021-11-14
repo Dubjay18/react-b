@@ -52,7 +52,7 @@ const SideBarTwo = ({ info }) => {
     `}
   </style>;
   return (
-    <div className="p-lg-4 p-2 h">
+    <div className="p-lg-4 p-3 h">
       <h1>{info}</h1>
       <p className="text-muted">
         {info} is the place to be if you like everything related to planets. I

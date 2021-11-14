@@ -91,7 +91,7 @@ const Planet = () => {
         </Modal.Header>
         <Modal.Body>
           {/* {plan === true ?  : <h1>Planets</h1>} */}
-          <h1 className=""> Planets</h1>
+          <h1 className="font-weight-bold"> Planets</h1>
           <Form className="p-5">
             <Form.Group className="mb-3">
               <Form.Label>
@@ -184,7 +184,7 @@ const Planet = () => {
         </Row>
       </div>
       {sidet === true ? (
-        <div className=" ms-4 rounded-prime bg-white shadow-lg h-50 sidebar-media">
+        <div className=" ms-lg-4 mt-2  rounded-prime bg-white shadow-lg h-50 sidebar-media">
           {" "}
           <div className="d-flex justify-content-end align-items-end me-5 mt-4">
             <Button variant="gray" onClick={() => setSidet(false)}>

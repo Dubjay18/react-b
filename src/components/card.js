@@ -163,7 +163,7 @@ const Cards = () => {
         </Modal.Header>
         <Modal.Body>
           {/* {plan === true ?  : <h1>Planets</h1>} */}
-          <h1 className=""> Characters</h1>
+          <h1 className="font-weight-bold"> Characters</h1>
 
           {/* {plan === true ? <CharacterCreate /> : <PlanetCreate />} */}
           <Form className="p-5">
@@ -279,7 +279,7 @@ const Cards = () => {
       </div>
 
       {side === true ? (
-        <div className=" ms-4 rounded-prime bg-white shadow-lg h-50">
+        <div className=" ms-md-4 mt-2 rounded-prime bg-white shadow-lg ">
           {" "}
           <div className="d-flex justify-content-end align-items-end me-5 mt-4">
             <Button variant="gray" onClick={() => setSide(false)}>
