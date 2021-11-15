@@ -8,7 +8,7 @@ import {
   Modal,
   Form,
 } from "react-bootstrap";
-import { Characters, planets } from "../data";
+import { planets } from "../data";
 import SideBarTwo from "./planetSidebar";
 const Planet = () => {
   const [show, setShow] = useState(false);
@@ -41,6 +41,8 @@ const Planet = () => {
     setData(data);
     setShow(false);
   }
+  localStorage.setItem("pl", JSON.stringify(data));
+  let pl = JSON.parse(localStorage.getItem("pl"));
 
   return (
     <div className="d-flex">
@@ -176,13 +178,20 @@ const Planet = () => {
                   />
                   <Card.Body id={ind}>
                     <Card.Title id={ind}>{e.name}</Card.Title>
-                    <Card.Text id={ind}>pop: {Characters.length}</Card.Text>
-                    {ind === planets.length - 1 ? (
+                    <Card.Text id={ind}>
+                      pop: {e.char === undefined ? 0 : e.char.length}
+                    </Card.Text>
+                    {ind === data.length - 1 ? (
                       <div
-                        className="position-absolute plus"
+                        className="position-absolute plus p-2"
                         onClick={handleShow}
                       >
-                        <Button variant="circle">+</Button>
+                        <Button
+                          className="font-plus px-4 py-3"
+                          variant="circle"
+                        >
+                          +
+                        </Button>
                       </div>
                     ) : (
                       ""
@@ -202,7 +211,12 @@ const Planet = () => {
               <CloseButton variant="gray" onClick={() => setSidet(false)} />
             </Button>
           </div>
-          <SideBarTwo info={itemt.name} d={itemt.dep} />{" "}
+          <SideBarTwo
+            info={itemt.name}
+            d={itemt.dep}
+            data={pl}
+            chart={itemt.char}
+          />{" "}
         </div>
       ) : (
         ""

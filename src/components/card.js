@@ -236,7 +236,12 @@ const Cards = () => {
             : "space-content mt-5 "
         }
       >
-        <Row xs={1} lg={3} className="g-5 rounded-prime">
+        <Row
+          xs={1}
+          md={2}
+          lg={side === true ? 2 : 3}
+          className="g-5 sit rounded-prime"
+        >
           {ndata.map((e, ind) => (
             <Col id={ind} key={e.id}>
               <Card
@@ -261,9 +266,13 @@ const Cards = () => {
                     <div>
                       <Card.Text id={ind}>{e.friends.length} friends</Card.Text>
                     </div>
-                    {ind === Characters.length - 1 ? (
+                    {ind === ndata.length - 1 ? (
                       <div className="position-absolute plus">
-                        <Button onClick={handleShow} variant="circle">
+                        <Button
+                          className="font-plus px-4 py-3"
+                          onClick={handleShow}
+                          variant="circle"
+                        >
                           +
                         </Button>
                       </div>

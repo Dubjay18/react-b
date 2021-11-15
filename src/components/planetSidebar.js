@@ -1,17 +1,29 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 // import srcone from "../Strapi assets/characters/character-1.png";
-import { planets } from "./../data";
+// import { Characters, planets } from "./../data";
 
-const SideBarTwo = ({ info, d }) => {
+const SideBarTwo = ({ info, d, data, chart }) => {
   let pchar = [];
 
-  for (let i = 0; i < planets.length; i++) {
-    const el = planets[i];
-    let nam = el.char.length;
+  for (let i = 0; i < data.length; i++) {
+    const el = chart;
+    // let nam = {el.char === undefined ? 0 : el.char.length};
+    let nam = 0;
+    if (el === undefined) {
+      nam = 0;
+    } else {
+      nam = el.length;
+    }
 
     pchar.push(nam);
+    console.log(nam);
   }
+  // function p() {
+  //   if (chart === undefined) {
+  //     data[data.length - 1].push("ssss");
+  //   }
+  // }
 
   const population = pchar.reduce((acc, a) => acc + a, 0);
   console.log(population);
@@ -68,20 +80,25 @@ const SideBarTwo = ({ info, d }) => {
       </div>
       <br />
       <div className="flex-col scroll  h">
-        {planets.map((e, i) => (
-          <div className="d-flex lex mb-3">
-            <img
-              src={e.char[i].img_src}
-              alt="elea"
-              height="100px"
-              className="rounded-prime"
-            />
-            <div className="ms-3">
-              <h4>{e.char[i].name}</h4>
-              <p className="text-muted">{e.char[i].friends.length} friends</p>
-            </div>
-          </div>
-        ))}
+        {chart === undefined
+          ? ""
+          : chart.map((e) => (
+              <div className="d-flex lex mb-3">
+                <img
+                  src={e === undefined ? "" : e.img_src}
+                  alt={e === undefined ? "" : "elea"}
+                  height="100px"
+                  className="rounded-prime"
+                />
+                <div className="ms-3">
+                  <h4>{e === undefined ? "none " : e.name}</h4>
+                  <p className="text-muted">
+                    {e === undefined ? "" : e.friends.length}{" "}
+                    {e === undefined ? "" : "friends"}
+                  </p>
+                </div>
+              </div>
+            ))}
       </div>
     </div>
   );

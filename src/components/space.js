@@ -1,10 +1,11 @@
 import React, { useState } from "react";
-import { Button } from "react-bootstrap";
+import { Button, Form } from "react-bootstrap";
 import LoadPage from "../load";
 import Cards from "./card";
 import Planet from "./card2";
 // import CharacterCreate from "./createCharacter";
 // import PlanetCreate from "./createPlanet";
+// import Select from "react-select";
 
 const Space = () => {
   const [grid, setGrid] = useState(false);
@@ -63,6 +64,9 @@ const Space = () => {
               >
                 CHARCTERS
               </Button>
+              <Form.Select className="ms-auto" variant="gray">
+                <option>Planet: ALL</option>
+              </Form.Select>
             </div>
 
             <div className="h-50">
