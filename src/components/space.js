@@ -13,7 +13,7 @@ const Space = () => {
   const real = () => setPage(false);
   setTimeout(() => {
     real();
-  }, 1000);
+  }, 1300);
 
   return (
     <>
@@ -64,9 +64,13 @@ const Space = () => {
               >
                 CHARCTERS
               </Button>
-              <Form.Select className="ms-auto" variant="gray">
-                <option>Planet: ALL</option>
-              </Form.Select>
+              {grid === true ? (
+                <Form.Select className="ms-auto" variant="gray">
+                  <option>Planet: ALL</option>
+                </Form.Select>
+              ) : (
+                ""
+              )}
             </div>
 
             <div className="h-50">
