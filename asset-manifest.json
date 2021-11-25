@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/react-b/static/css/main.85678b3e.chunk.css",
-    "main.js": "/react-b/static/js/main.5c253882.chunk.js",
-    "main.js.map": "/react-b/static/js/main.5c253882.chunk.js.map",
-    "runtime-main.js": "/react-b/static/js/runtime-main.a7fd2ef5.js",
-    "runtime-main.js.map": "/react-b/static/js/runtime-main.a7fd2ef5.js.map",
+    "main.css": "/react-b/static/css/main.74baa1f4.chunk.css",
+    "main.js": "/react-b/static/js/main.94d238ef.chunk.js",
+    "main.js.map": "/react-b/static/js/main.94d238ef.chunk.js.map",
+    "runtime-main.js": "/react-b/static/js/runtime-main.f02e1019.js",
+    "runtime-main.js.map": "/react-b/static/js/runtime-main.f02e1019.js.map",
     "static/css/2.383c0125.chunk.css": "/react-b/static/css/2.383c0125.chunk.css",
-    "static/js/2.b4e53b78.chunk.js": "/react-b/static/js/2.b4e53b78.chunk.js",
-    "static/js/2.b4e53b78.chunk.js.map": "/react-b/static/js/2.b4e53b78.chunk.js.map",
-    "static/js/3.96112dd2.chunk.js": "/react-b/static/js/3.96112dd2.chunk.js",
-    "static/js/3.96112dd2.chunk.js.map": "/react-b/static/js/3.96112dd2.chunk.js.map",
+    "static/js/2.b4c68c15.chunk.js": "/react-b/static/js/2.b4c68c15.chunk.js",
+    "static/js/2.b4c68c15.chunk.js.map": "/react-b/static/js/2.b4c68c15.chunk.js.map",
+    "static/js/3.8a75d8c8.chunk.js": "/react-b/static/js/3.8a75d8c8.chunk.js",
+    "static/js/3.8a75d8c8.chunk.js.map": "/react-b/static/js/3.8a75d8c8.chunk.js.map",
     "index.html": "/react-b/index.html",
     "static/css/2.383c0125.chunk.css.map": "/react-b/static/css/2.383c0125.chunk.css.map",
-    "static/css/main.85678b3e.chunk.css.map": "/react-b/static/css/main.85678b3e.chunk.css.map",
-    "static/js/2.b4e53b78.chunk.js.LICENSE.txt": "/react-b/static/js/2.b4e53b78.chunk.js.LICENSE.txt",
+    "static/css/main.74baa1f4.chunk.css.map": "/react-b/static/css/main.74baa1f4.chunk.css.map",
+    "static/js/2.b4c68c15.chunk.js.LICENSE.txt": "/react-b/static/js/2.b4c68c15.chunk.js.LICENSE.txt",
     "static/media/character-1.b8cf9c50.png": "/react-b/static/media/character-1.b8cf9c50.png",
     "static/media/character-10.f6fdbe59.png": "/react-b/static/media/character-10.f6fdbe59.png",
     "static/media/character-11.436dd33b.png": "/react-b/static/media/character-11.436dd33b.png",
@@ -38,10 +38,10 @@
     "static/media/planet-loader.7e184522.svg": "/react-b/static/media/planet-loader.7e184522.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a7fd2ef5.js",
+    "static/js/runtime-main.f02e1019.js",
     "static/css/2.383c0125.chunk.css",
-    "static/js/2.b4e53b78.chunk.js",
-    "static/css/main.85678b3e.chunk.css",
-    "static/js/main.5c253882.chunk.js"
+    "static/js/2.b4c68c15.chunk.js",
+    "static/css/main.74baa1f4.chunk.css",
+    "static/js/main.94d238ef.chunk.js"
   ]
 }
