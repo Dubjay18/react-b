@@ -7,6 +7,7 @@ import {
   CloseButton,
   Modal,
   Form,
+  Offcanvas,
 } from "react-bootstrap";
 import { planets } from "../data";
 import SideBarTwo from "./planetSidebar";
@@ -146,19 +147,8 @@ const Planet = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-      <div
-        className={
-          sidet === true
-            ? "space-content mt-5 media-content"
-            : "space-content mt-5 "
-        }
-      >
-        <Row
-          xs={1}
-          md={sidet === true ? 2 : 3}
-          lg={sidet === true ? 3 : 4}
-          className="g-5 rounded-prime"
-        >
+      <div className="space-content mt-5 ">
+        <Row xs={1} md={3} lg={4} className="g-5 rounded-prime">
           {data.map((e, ind) => (
             <Col id={ind}>
               <Card
@@ -203,24 +193,41 @@ const Planet = () => {
           ))}
         </Row>
       </div>
-      {sidet === true ? (
-        <div className=" ms-lg-4 mt-2  rounded-prime bg-white shadow-lg h-50 sidebar-media">
+      {["end"].map((placement, idx) => (
+        <Offcanvas
+          show={sidet}
+          onHide={() => setSidet(false)}
+          placement={placement}
+          className=" ms-md-4 mt-2 rounded-prime bg-white shadow-lg "
+        >
+          <Offcanvas.Header>
+            <Button
+              variant="gray"
+              onClick={() => setSidet(false)}
+              className=" m"
+            >
+              <CloseButton onClick={() => setSidet(false)} />
+            </Button>
+          </Offcanvas.Header>
+          <Offcanvas.Body className="d-flex justify-content-end  mt-4">
+            <SideBarTwo
+              info={itemt.name}
+              d={itemt.dep}
+              data={pl}
+              chart={itemt.char}
+            />{" "}
+          </Offcanvas.Body>
+        </Offcanvas>
+      ))}
+      {/* <div className=" ms-lg-4 mt-2  rounded-prime bg-white shadow-lg h-50 sidebar-media">
           {" "}
           <div className="d-flex justify-content-end align-items-end me-5 mt-4">
             <Button variant="gray" onClick={() => setSidet(false)}>
               <CloseButton variant="gray" onClick={() => setSidet(false)} />
             </Button>
           </div>
-          <SideBarTwo
-            info={itemt.name}
-            d={itemt.dep}
-            data={pl}
-            chart={itemt.char}
-          />{" "}
-        </div>
-      ) : (
-        ""
-      )}
+          
+        </div> */}
     </div>
   );
 };

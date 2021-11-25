@@ -62,12 +62,12 @@ const SideBarTwo = ({ info, d, data, chart }) => {
     `}
   </style>;
   return (
-    <div className="p-lg-4 p-3 h">
+    <div className="p-lg-4  ">
       <h1>{info}</h1>
       <p className="text-muted">
         {info} {d}
       </p>
-      <div className="d-flex w-50 justify-content-between lex">
+      <div className="">
         <div>
           <p>Population</p>
           <h4>{population}</h4>
@@ -79,11 +79,11 @@ const SideBarTwo = ({ info, d, data, chart }) => {
         <Button variant="gray">+</Button>
       </div>
       <br />
-      <div className="flex-col scroll  h">
+      <div className=" ">
         {chart === undefined
           ? ""
           : chart.map((e) => (
-              <div className="d-flex lex mb-3">
+              <div className="d-flex mb-3">
                 <img
                   src={e === undefined ? "" : e.img_src}
                   alt={e === undefined ? "" : "elea"}

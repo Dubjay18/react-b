@@ -5,10 +5,8 @@ const SideBarOne = ({ info, friend, d }) => {
   return (
     <div className="p-lg-4 p-3 h">
       <h1>{info}</h1>
-      <p className="text-muted">
-        {info} {d}
-      </p>
-      <div className="d-flex w-50 justify-content-between lex">
+      <p className="text-muted">{d}</p>
+      <div className="">
         <div>
           <p>Planet</p>
           <h4>Alpha</h4>
@@ -21,9 +19,9 @@ const SideBarOne = ({ info, friend, d }) => {
       <br />
       <h3 className="text-muted">FREINDS</h3>
       <br />
-      <div className="flex-col scroll h">
+      <div className="flex-col h">
         {friend.map((e) => (
-          <div className="d-flex lex mb-3">
+          <div className=" lex mb-3">
             <img
               src={e.img_src}
               alt="elea"

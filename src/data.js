@@ -24,6 +24,8 @@ export const Characters = [
     name: "Brooklyn Simmons",
     img_src: srcseven,
     id: 1,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -79,6 +81,8 @@ export const Characters = [
     name: "Cameron Williamson",
     img_src: srcone,
     id: 2,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -134,6 +138,8 @@ export const Characters = [
     name: "Leslie Alexander",
     img_src: srctwo,
     id: 3,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -189,6 +195,8 @@ export const Characters = [
     name: "Kristin Watson",
     img_src: srceight,
     id: 4,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -244,6 +252,8 @@ export const Characters = [
     name: "Jenny Wilson",
     img_src: srcfive,
     id: 5,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -287,6 +297,8 @@ export const Characters = [
     name: "Marvin McKinney",
     img_src: srcnine,
     id: 6,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -366,6 +378,8 @@ export const Characters = [
     name: "Jerome Bell",
     img_src: srcsix,
     id: 7,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -421,6 +435,8 @@ export const Characters = [
     name: "Guy Hawkins",
     img_src: srcfour,
     id: 8,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",
@@ -464,6 +480,8 @@ export const Characters = [
     name: "Robert Fox",
     img_src: srcthree,
     id: 9,
+    details:
+      "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.",
     friends: [
       {
         name: "Eleanor Pena",

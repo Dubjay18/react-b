@@ -33,6 +33,18 @@ body {
 .font-plus {
   font-size: 20px !important;
 }
+.m {
+  margin-left: 70%;
+}
+.offcanvas-header .btn-close {
+  padding: 0 !important;
+  margin-top: 0 !important;
+  margin-right: 0 !important;
+  margin-bottom: 0 !important;
+}
+.offcanvas-backdrop.show {
+  opacity: 0 !important;
+}
 .space-content {
   width: 90%;
   height: 60%;

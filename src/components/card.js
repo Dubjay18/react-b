@@ -5,6 +5,7 @@ import { Form } from "react-bootstrap";
 // import { Friendss } from "./../data";
 import SideBarOne from "./characterSidebar";
 import Select from "react-select";
+import { Offcanvas } from "react-bootstrap";
 
 const Cards = () => {
   const [fends, setFends] = React.useState([]);
@@ -149,6 +150,35 @@ const Cards = () => {
    
     `}
       </style>
+      {["end"].map((placement, idx) => (
+        <Offcanvas
+          show={side}
+          onHide={() => setSide(false)}
+          placement={placement}
+          className=" ms-md-4 mt-2 rounded-prime bg-white shadow-lg "
+        >
+          <Offcanvas.Header>
+            <Button
+              variant="gray"
+              onClick={() => setSide(false)}
+              className=" m"
+            >
+              <CloseButton onClick={() => setSide(false)} />
+            </Button>
+          </Offcanvas.Header>
+          <Offcanvas.Body className="d-flex justify-content-end  me-5 mt-4">
+            <div>
+              {" "}
+              <div></div>
+              <SideBarOne
+                info={item.name}
+                friend={item.friends}
+                d={item.details}
+              />{" "}
+            </div>
+          </Offcanvas.Body>
+        </Offcanvas>
+      ))}
       <Modal
         size="lg"
         aria-labelledby="contained-modal-title-vcenter"
@@ -229,19 +259,8 @@ const Cards = () => {
           </Button>
         </Modal.Footer>
       </Modal>
-      <div
-        className={
-          side === true
-            ? "space-content mt-5 media-content"
-            : "space-content mt-5 "
-        }
-      >
-        <Row
-          xs={1}
-          md={2}
-          lg={side === true ? 2 : 3}
-          className="g-5 sit rounded-prime"
-        >
+      <div className="space-content mt-5 ">
+        <Row xs={1} md={2} lg={3} className="g-5 sit rounded-prime">
           {ndata.map((e, ind) => (
             <Col id={ind} key={e.id}>
               <Card
@@ -286,20 +305,6 @@ const Cards = () => {
           ))}
         </Row>
       </div>
-
-      {side === true ? (
-        <div className=" ms-md-4 mt-2 rounded-prime bg-white shadow-lg ">
-          {" "}
-          <div className="d-flex justify-content-end align-items-end me-5 mt-4">
-            <Button variant="gray" onClick={() => setSide(false)}>
-              <CloseButton onClick={() => setSide(false)} />
-            </Button>
-          </div>
-          <SideBarOne info={item.name} friend={item.friends} d={details} />{" "}
-        </div>
-      ) : (
-        ""
-      )}
     </div>
   );
 };
